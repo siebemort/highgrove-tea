@@ -2,7 +2,9 @@
 
 Statische site voor GitHub Pages. Geen build-stap nodig om te publiceren: `index.html` is al gegenereerd.
 
-**Live (na publicatie):** `https://<gebruikersnaam>.github.io/highgrove-tea/`
+**Live:** https://siebemort.github.io/highgrove-tea/  
+**Repository:** https://github.com/siebemort/highgrove-tea  
+**MailerLite:** gekoppeld (account `2784145`, formulier `203751631354857167`), getest op 10 november 2026.
 
 | Sectie | Inhoud |
 |---|---|
@@ -27,7 +29,7 @@ Visuals: hero-foto, 2 verhaalfoto's, 4 vrijgestelde producten, video = ruim bove
    ```
 3. Repository → Settings → **Pages** → Source: *Deploy from a branch* → `main` / `(root)` → Save.
 4. Na ± 1 minuut staat de site live. Test de link op desktop én gsm.
-5. Is je gebruikersnaam niet `siebemort`? Pas dan `HG_PAGES_URL` aan en bouw de mails en CSV opnieuw:
+5. Andere gebruikersnaam dan `siebemort`? Pas dan `HG_PAGES_URL` aan en bouw de mails en CSV opnieuw:
    ```bash
    export HG_PAGES_URL=https://<gebruikersnaam>.github.io/highgrove-tea
    python3 09_mailerlite/bron/emails.py && python3 06_ai-content/copy/copybank.py && python3 10_landingspagina/bron/build_landing.py
